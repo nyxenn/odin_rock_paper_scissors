@@ -1,13 +1,46 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="rock-paper-scissors.js" defer></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?Noto+Color+Emoji&family=Honk&family=Orbitron:wght@400..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <script src="rock-paper-scissors.js"></script>
-</head>
+  <body>
+    <div class="page">
+      <div class="scores">
+        <div class="player">
+          <span class="player-name">You</span>
+          <span class="player-score">0</span>
+        </div>
+        <div class="cpu">
+          <span class="cpu-name">CPU</span> <span class="cpu-score">0</span>
+        </div>
+      </div>
 
-<body></body>
+      <div class="event-log">
+        <button id="event-list-toggle" class="icon-button">&#x1F4DC;</button>
+        <div class="event-popups"></div>
+        <div class="event-list d-none"></div>
+      </div>
 
+      <div class="actions">
+        <button id="rock" class="icon-button">&#9994;</button>
+        <button id="paper" class="icon-button">&#9995;</button>
+        <button id="scissors" class="icon-button">&#9996;</button>
+      </div>
+    </div>
+  </body>
 </html>
